@@ -17,5 +17,6 @@ This is a bare-bones Python based MCP server made for hosting in Azure App Servi
 1. Create an Azure App Service on Linux targeting Python 3.12
 2. Set the startup command to `uvicorn server:app --host 0.0.0.0 --port 8000 --proxy-headers --forwarded-allow-ips=*`
 3. set an environment variable `SCM_DO_BUILD_DURING_DEPLOYMENT` to `true`
-4. deploy this code using: az webapp up --name app-name --resource-group resource-group-name
-5. run the MCP inspector and connect to `https://simple-web-mcp.azurewebsites.net/mcp/`
+4. turn on Always On
+5. deploy this code using: az webapp up --name app-name --resource-group resource-group-name
+6. run the MCP inspector and connect to `https://simple-web-mcp.azurewebsites.net/mcp/`
