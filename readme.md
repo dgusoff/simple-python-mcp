@@ -7,9 +7,11 @@ This is a bare-bones Python based MCP server made for hosting in Azure App Servi
 ## Getting Started Locally
 
 1. pull this repo down
-2. `uv pip install -e .`
-3. run `uvicorn server:app --host 0.0.0.0 --port 8000`
-4. run `npx @modelcontextprotocol/inspector` to launch the MCP inspector and connect over Streamable HTTP to `http://localhost:8000/mcp`
+1. `uv venv`        
+1. `.venv\Scripts\activate`
+1. `pip install -r requirements.txt`
+1. run `uvicorn server:app --host 0.0.0.0 --port 8000`
+1. run `npx @modelcontextprotocol/inspector` to launch the MCP inspector and connect over Streamable HTTP to `http://localhost:8000/mcp`
 
 
 ## Deploy to Azure
